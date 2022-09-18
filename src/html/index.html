@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Diff Tester</title>
+  </head>
+
+  <body>
+    <header class="d-flex flex-row align-items-center px-3">Text Diff Tester</header>
+    <main class="d-flex flex-row">
+      <div class="controls">
+        <button class="text-btn-1 active control-btn">Text 1</button>
+        <button class="text-btn-2 active control-btn">Text 2</button>
+        <button class="results-btn active control-btn">Difference</button>
+      </div>
+      <div class="content">
+        <div class="content-panel panel-textarea-1">
+          <textarea class="textarea-1" spellcheck="false" withspellcheck="false"></textarea>
+          <input type="text" class="text-1-color" value="Text 1" />
+        </div>
+        <div class="content-panel panel-textarea-2">
+          <textarea class="textarea-2" spellcheck="false" withspellcheck="false"></textarea>
+          <input type="text" class="text-2-color" value="Text 2" />
+        </div>
+        <div class="content-panel panel-results">
+          <pre class="results"></pre>
+          <input type="text" class="text-result-color" value="Difference" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
