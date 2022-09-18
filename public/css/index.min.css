@@ -70,6 +70,19 @@ header {
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+header .help-btn {
+  padding: 0.45rem 1rem;
+  background-color: #17a2b8;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+header .help-btn:hover {
+  background-color: #117a8a;
 }
 
 main {
@@ -84,9 +97,39 @@ main {
   height: 50px;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
   background-color: gray;
   padding: 0 0.5rem;
+}
+.controls .controls-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.controls .diff-type-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 2px solid #17a2b8;
+  background-color: #17a2b8;
+}
+.controls .diff-type-container p {
+  font-family: sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+}
+.controls .diff-type-container .set-diff-type {
+  padding: 0.5rem 0.75rem;
+  border: 0px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #117a8a;
+  color: #fff;
 }
 .controls .control-btn {
   margin-right: 0.5rem;
@@ -94,10 +137,25 @@ main {
   border-radius: 0px;
   border: 0px solid #fff;
   cursor: pointer;
-}
-.controls .control-btn.active {
-  background-color: rgba(0, 0, 0, 0.35);
   color: #fff;
+}
+.controls .control-btn.text-btn-1 {
+  background-color: rgba(0, 26, 255, 0.35);
+}
+.controls .control-btn.text-btn-1.active {
+  background-color: rgba(0, 26, 255, 0.75);
+}
+.controls .control-btn.text-btn-2 {
+  background-color: rgba(235, 64, 52, 0.35);
+}
+.controls .control-btn.text-btn-2.active {
+  background-color: rgba(235, 64, 52, 0.75);
+}
+.controls .control-btn.results-btn {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.controls .control-btn.results-btn.active {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .content {
@@ -116,7 +174,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 0 1 auto;
-  background-color: #000;
+  background-color: gray;
 }
 .content-panel p {
   text-align: center;
@@ -138,6 +196,7 @@ main {
   font-size: 14px;
   border: 1px solid #fff;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .results {
@@ -154,6 +213,7 @@ main {
   font-size: 14px;
   flex-shrink: 1;
   white-space: pre-wrap;
+  box-sizing: border-box;
 }
 
 .text-1-color {
@@ -177,7 +237,7 @@ main {
 }
 
 .text-result-color {
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   text-align: center;
   font-family: monospace;

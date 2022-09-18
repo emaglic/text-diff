@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JavaScript Sandbox</title>
-    <!-- <base href="http://eben.pizza/projects/jsbx" /> -->
+    <title>Text Diff Tester</title>
   <link href="css/index.min.css" rel="stylesheet"></head>
 
   <body>
-    <header class="d-flex flex-row align-items-center px-3">Text Diff Tester</header>
+    <header class="d-flex flex-row align-items-center px-3">
+      <h1>Text Diff Tester</h1>
+      <a href="https://github.com/emaglic/text-diff" target="_blank" rel="nofollow" class="help-btn">Help!</a>
+    </header>
     <main class="d-flex flex-row">
       <div class="controls">
-        <button class="text-btn-1 active control-btn">Text 1</button>
-        <button class="text-btn-2 active control-btn">Text 2</button>
-        <button class="results-btn active control-btn">Difference</button>
+        <div class="controls-inner">
+          <button class="text-btn-1 active control-btn">Text 1</button>
+          <button class="text-btn-2 active control-btn">Text 2</button>
+          <button class="results-btn active control-btn">Difference</button>
+        </div>
+        <div class="diff-type-container">
+          <p>Test Method</p>
+          <select class="set-diff-type"></select>
+        </div>
       </div>
       <div class="content">
         <div class="content-panel panel-textarea-1">
